@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'JetBrainsMono-Bold';
+    src: url('/resources/JetBrainsMono-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'JetBrainsMono-ExtraBold';
+    src: url('/resources/JetBrainsMono-ExtraBold.woff2') format('woff2');;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: 'JetBrainsMono-Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'JetBrainsMono-ExtraBold', sans-serif;
+    color: #00bcd4;
+    font-weight: 800;
+    font-size: 70px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+label {
+    color: #00bcd4;
+    margin-right: 10px;
+}
+
+input {
+    padding: 5px;
+}
+
+button {
+    height: 40px;
+    font-size: 14px;
+    width: 200px;
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #444;
+    border-radius: 3px;
+    display: inline-block;
+    width: calc(20% - 28px);
+    text-align: center;
+    margin: 4px;
+    padding: 4px 10px;
+}
+
+.footer {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #00bcd4;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #ff3366;
+}
+
+input[type='text'] {
+    color:#00bcd4;
+    background-color: #15151a;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    resize: vertical;
+    border: 1px solid #00bcd4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type='text']:focus {
+    outline: none;
+    border-color: #ff3366;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lnr {
+    margin-bottom: 10px;
+}
